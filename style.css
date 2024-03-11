@@ -1,0 +1,113 @@
+body {
+  background: url(12805.jpg);
+  height: 1200px;
+}
+
+body::-webkit-scrollbar {
+  background-color: lightblue;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(rgb(197, 157, 82), rgb(211, 96, 115), rgb(218, 66, 218), rgb(72, 72, 228));
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  transition: all 0.5s ease;
+}
+
+.icon {
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.active.sidebar {
+  opacity: 1;
+}
+
+.sidebar {
+  opacity: 0;
+  transition: 0.5s;
+  height: 500px;
+  width: 300px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 57px;
+  left: 0;
+  gap: 25px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.sidebar h1 {
+  text-transform: uppercase;
+  color: blue;
+}
+.sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar a:hover {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px/50px;
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgba(232, 70, 252, 0.6839985994) 100%);
+}
+.container .counter {
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgba(232, 70, 252, 0.6839985994) 100%);
+  margin: 50px 0px 50px 0px;
+  padding: 15px;
+  font-size: 50px;
+  text-align: center;
+  font-family: monospace;
+  box-shadow: -48px 51px 20px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.container .counter h1,
+.container .counter .num {
+  font-size: 50px;
+  color: white;
+}
+.container .buttons {
+  display: flex;
+  gap: 50px;
+}
+.container .buttons button {
+  border-radius: 5px;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  margin-top: 12px;
+  cursor: pointer;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.container .buttons .increment-btn {
+  background-color: green;
+}
+.container .buttons .decrement-btn {
+  background-color: rgb(49, 109, 229);
+}
+.container .buttons .reset-btn {
+  background-color: rgba(255, 0, 0, 0.881);
+}/*# sourceMappingURL=style.css.map */
