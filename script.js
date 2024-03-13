@@ -31,7 +31,7 @@ reset.addEventListener("click", function reset() {
 
 window.addEventListener("scroll", () => {
   if (document.documentElement.scrollTop > 40) {
-    navbar.style.backgroundColor = "#f27168";
+    navbar.style.backgroundColor = "#d472e0";
   } else {
     navbar.style.backgroundColor = "";
   }
